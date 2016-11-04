@@ -1,0 +1,5 @@
+<h1>Customers Without Emails</h1>
+<p><%= link_to 'New Customer', new_customer_path %> - <%= link_to 'Index', finder_path %><p>
+<div class="customerWrap">
+  <%= render partial: "customers/customer", collection: @customers %>
+</div>
