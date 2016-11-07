@@ -6,6 +6,11 @@
   <% if(!customer.image.empty?) then %>
   <%= image_tag(customer.image) %>
   <% end %>
+  <% if(customer.province_id.nil?) then %>
+  <p>Province: None</p>
+  <% else %>
+  <p>Province: <%= customer.province.name %></p>
+  <% end %>
   <% if(!customer.phone_number.empty?) then %>
   <p>Phone #: <%= customer.phone_number %></p>
   <% end %>
